@@ -1,0 +1,61 @@
+import 'package:flutter/material.dart';
+
+class MainStat extends StatelessWidget {
+  // 미세먼지, 초미세먼지 등
+  final String category;
+
+  // 아이콘 경로
+  final String imgPath;
+
+  // 오염 정도
+  final String level;
+
+  // 오염수치
+  final String stat;
+
+  // 너비
+  final double width;
+
+  const MainStat({
+    Key? key,
+    required this.category,
+    required this.imgPath,
+    required this.level,
+    required this.stat,
+    required this.width,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final ts = TextStyle(
+      color: Colors.black,
+    );
+
+    return SizedBox(
+      width: width,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            category,
+            style: ts,
+          ),
+          SizedBox(height: 8.0,),
+          Image.asset(
+            imgPath,
+            width: 50.0,
+          ),
+          SizedBox(height: 8.0,),
+          Text(
+            level,
+            style: ts,
+          ),
+          Text(
+            stat,
+            style: ts,
+          ),
+        ],
+      ),
+    );
+  }
+}
