@@ -18,6 +18,8 @@ void main() async {
     await Hive.openBox<StatModel>(itemCode.name);
   }
 
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(
     MaterialApp(
       theme: ThemeData(
