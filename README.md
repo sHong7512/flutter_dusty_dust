@@ -1,16 +1,16 @@
 # dusty_dust
 
-A new Flutter project.
+A Example Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- 로컬 데이터 저장(sharedPreference 랑 비슷)
+  
+  hive: ^2.2.3
+  
+  hive_flutter: ^1.1.0
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- http 패키지 (중국)
+  
+  dio: ^4.0.6
